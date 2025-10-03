@@ -24,6 +24,18 @@ const Color MAGENTA  = {"Magenta", "\033[35m"};
 const Color CYAN     = {"Cyan", "\033[36m"};
 const Color WHITE    = {"White", "\033[37m"};
 
+void enable_ansi_support() {
+#ifdef _WIN32  // Only on Windows
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    if (hOut != INVALID_HANDLE_VALUE) {
+        DWORD mode;
+        GetConsoleMode(hOut, &mode);
+        mode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;  // Enable ANSI
+        SetConsoleMode(hOut, mode);
+    }
+#endif
+}
+
 void set_text_color(const Color& color) {
 	std::cout << color.code;
 }
