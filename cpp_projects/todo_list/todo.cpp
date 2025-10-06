@@ -22,12 +22,7 @@ struct Color {
 // A collection of common colors using ANSI escape codes
 // The codes are strings that the console interprets to change color
 
-
-void set_text_color(const Color& color) {
-	std::cout << color.code;
-}
-
-struct Task
+struct taskList		// Will change this in the nearest future
 {
 	int priority;
 	std::string category;
@@ -55,7 +50,6 @@ void startScreen() {
 int main() {
 
 	startScreen();
-
 
 	set_text_color(RESET);
 	return 0;
