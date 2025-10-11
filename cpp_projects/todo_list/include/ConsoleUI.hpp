@@ -1,6 +1,5 @@
 #ifndef CONSOLE_UI_HPP
 #define CONSOLE_UI_HPP
-
 #include <string>
 #include <vector>
 #include <iostream>
