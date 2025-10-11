@@ -1,12 +1,18 @@
+#include <iostream>
+#include <list>
+#include <string>
 
-
-
-std::vector<Task> taskList;
-
-struct taskList		// Will change this in the nearest future
+struct Task	// Will change this in the nearest future
 {
-	int priority;
+	std::string description;
+	bool completed;
+	short int priority;
 	std::string category;
-	std::string task;
+	Task(const std::string& desc, short int prio, const std::string& cat)
+		: description(desc), completed(false), priority(prio), category(cat) {}
+	
 
 };
+
+std::list<Task> myTasksList;
+

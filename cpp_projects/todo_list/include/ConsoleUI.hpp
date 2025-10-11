@@ -8,8 +8,9 @@
 
 class ConsoleUI {
 public:
+		ConsoleUI();
 		void displayHeader();
-		void displayMenu();
+		void displayStartMenu();
 		std::string getUserInput(std::string choice);
 		void showTaks(const std::vector<std::string>& tasks);
 		void showError(const std::string& message);

@@ -17,7 +17,9 @@ const float version = 1.0;
 int main() {
 
 	ConsoleUI ui;
-	ui.displayMenu();
+	ui.displayHeader();
+	ui.displayStartMenu();
+
 
 	Colors::set_text_color(Colors::RESET);
 	return 0;
