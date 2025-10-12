@@ -16,12 +16,12 @@ const float version = 1.0;
 
 int main() {
 
-	ConsoleUI ui;
+	ConsoleUI ui;		// Singleton pattern here
 	ui.displayHeader();
 	ui.displayStartMenu();
 
 
-	Colors::set_text_color(Colors::RESET);
+	Colors::set_text_color(Colors::RESET);	// Using Colors namespace
 	return 0;
 }
 
