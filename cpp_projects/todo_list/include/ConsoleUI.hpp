@@ -5,7 +5,7 @@
 #include <iostream>
 #include "Colors.hpp"
 
-class ConsoleUI {
+class ConsoleUI {		// ConsoleUI class for organization
 public:
 		ConsoleUI();
 		void displayHeader();

@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-namespace Colors {
+namespace Colors {		// Namespace for organization
 	struct Color {
 		std::string name;
 		std::string code;
