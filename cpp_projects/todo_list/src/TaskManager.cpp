@@ -7,7 +7,7 @@
 // Task struct constructor and methods
 
 Task::Task(const std::string& desc, short int prio, short int pos, const std::string& cat)
-		: description(desc), completed(false), priority(prio), position(pos), category(cat) {}
+		: description(desc), completed(false), priority(prio), position(pos), category(cat) {};
 
 void Task::markCompleted() {
 	completed = true;

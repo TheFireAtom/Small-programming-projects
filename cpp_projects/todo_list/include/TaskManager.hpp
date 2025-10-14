@@ -1,6 +1,7 @@
 #ifndef TASK_MANAGER_HPP
 #define TASK_MANAGER_HPP
 #include <string>
+#include <vector>
 
 struct Task	// Will change this in the nearest future
 {
@@ -10,7 +11,7 @@ struct Task	// Will change this in the nearest future
 	short int position;
 	std::string category;
 
-	Task(const std::string& desc, short int prio, short int pos const std::string& cat);
+	Task(const std::string& desc, short int prio, short int pos, const std::string& cat);
 
 	void markCompleted();
 	std::string toString() const;
